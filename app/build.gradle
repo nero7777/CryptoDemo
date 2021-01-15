@@ -8,7 +8,11 @@ android {
 
     defaultConfig {
         applicationId "com.example.messanger"
+<<<<<<< HEAD
         minSdkVersion 16
+=======
+        minSdkVersion 26
+>>>>>>> 84e8f4b9bd4e40e78097efe6131e730d2c3c470f
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"

@@ -77,17 +77,30 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
+<<<<<<< HEAD
                 <ImageView
                     android:id="@+id/imageView_DES"
+=======
+
+                <ImageView
+                    android:id="@+id/imageView_RSA"
+>>>>>>> 84e8f4b9bd4e40e78097efe6131e730d2c3c470f
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/svidblack" />
 
                 <TextView
+<<<<<<< HEAD
                     android:id="@+id/text_DES"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="DES Algorithm"
+=======
+                    android:id="@+id/text_RSA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RSA Algorithm"
+>>>>>>> 84e8f4b9bd4e40e78097efe6131e730d2c3c470f
                     android:gravity="center_horizontal"
                     android:textColor="@color/black"
                     android:layout_marginTop="8dp"/>
@@ -109,13 +122,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+<<<<<<< HEAD
             <ImageView
                 android:id="@+id/imageView_RSA"
+=======
+
+            <ImageView
+                android:id="@+id/imageView_DES"
+>>>>>>> 84e8f4b9bd4e40e78097efe6131e730d2c3c470f
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/svidblack" />
 
             <TextView
+<<<<<<< HEAD
                 android:id="@+id/text_RSA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -123,6 +143,16 @@
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:layout_marginTop="8dp"/>
+=======
+                android:id="@+id/text_DES"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DES Algorithm"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+
+>>>>>>> 84e8f4b9bd4e40e78097efe6131e730d2c3c470f
         </LinearLayout>
 
     </LinearLayout>

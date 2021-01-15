@@ -17,7 +17,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+<<<<<<< HEAD
 
+=======
+>>>>>>> 84e8f4b9bd4e40e78097efe6131e730d2c3c470f
             android:orientation="vertical"
             >
 

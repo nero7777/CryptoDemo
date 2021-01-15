@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+=======
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aesActivity">
+
+>>>>>>> 84e8f4b9bd4e40e78097efe6131e730d2c3c470f
     <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+<<<<<<< HEAD
         tools:context="com.example.messanger.aesActivity"
+=======
+        tools:context="com.example.loveb.securemessenger.DES"
+>>>>>>> 84e8f4b9bd4e40e78097efe6131e730d2c3c470f
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 84e8f4b9bd4e40e78097efe6131e730d2c3c470f
             android:orientation="vertical"
             >
 
@@ -112,4 +130,10 @@
 
 
         </LinearLayout>
+<<<<<<< HEAD
     </ScrollView>
+=======
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> 84e8f4b9bd4e40e78097efe6131e730d2c3c470f

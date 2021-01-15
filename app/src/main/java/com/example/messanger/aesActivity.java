@@ -2,6 +2,7 @@ package com.example.messanger;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
@@ -29,10 +30,17 @@ public class aesActivity extends AppCompatActivity {
     public static String pwdtext="qwerty";
     String inptext;
 
+=======
+import android.os.Bundle;
+
+public class aesActivity extends AppCompatActivity {
+
+>>>>>>> 84e8f4b9bd4e40e78097efe6131e730d2c3c470f
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aes);
+<<<<<<< HEAD
 
         input_text = (EditText) findViewById(R.id.input_text);
         output_text = (TextView) findViewById(R.id.output_text);
@@ -176,4 +184,7 @@ public class aesActivity extends AppCompatActivity {
         }
     }
 
+=======
+    }
+>>>>>>> 84e8f4b9bd4e40e78097efe6131e730d2c3c470f
 }
