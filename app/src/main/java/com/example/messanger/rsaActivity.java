@@ -1,5 +1,4 @@
 package com.example.messanger;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -73,9 +72,8 @@ public class rsaActivity extends AppCompatActivity {
             public void onClick(View view) {
                 temp = input.getText().toString(); ///input text
 
-                if(temp.isEmpty())
-                {
-                    Toast.makeText( rsaActivity.this,"Empty Text! Please type some Text",Toast.LENGTH_SHORT).show();
+                if (temp.isEmpty()) {
+                    Toast.makeText(rsaActivity.this, "Empty Text! Please type some Text", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 String encrypted = encryptRSAToString(temp, publicKeyBytesBase64);
@@ -102,7 +100,7 @@ public class rsaActivity extends AppCompatActivity {
                 try {
                     input.setText(" ");
                     output.setText("");
-                     Toast.makeText( rsaActivity.this,"Cleared Successfully!!!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(rsaActivity.this, "Cleared Successfully!!!", Toast.LENGTH_SHORT).show();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -153,7 +151,7 @@ public class rsaActivity extends AppCompatActivity {
 
             byte[] encryptedBytes = cipher.doFinal(clearText.getBytes("UTF-8"));
             encryptedBase64 = new String(Base64.getEncoder().encodeToString(encryptedBytes));
-        } catch (Exception  e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -185,32 +183,26 @@ public class rsaActivity extends AppCompatActivity {
 
     public void getspeechinput(View view) {
 
-        Intent intent =new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
-        if(intent.resolveActivity(getPackageManager())!=null)
-        {
-            startActivityForResult(intent,1001);
-        }
-        else
-        {
-            Toast.makeText(this,"your device does not support this feature",Toast.LENGTH_SHORT).show();
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(intent, 1001);
+        } else {
+            Toast.makeText(this, "your device does not support this feature", Toast.LENGTH_SHORT).show();
         }
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        switch(requestCode)
-        {
+        switch (requestCode) {
             case 1001:
-                if(resultCode==RESULT_OK&&data!=null)
-                {
-                    ArrayList<String> res=data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                if (resultCode == RESULT_OK && data != null) {
+                    ArrayList<String> res = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     input.setText(res.get(0));
                 }
                 break;
         }
     }
-
 }
