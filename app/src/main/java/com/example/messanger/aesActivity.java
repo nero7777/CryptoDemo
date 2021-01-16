@@ -15,6 +15,7 @@ import android.widget.Toast;
 import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.Objects;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
@@ -40,7 +41,7 @@ public class aesActivity extends AppCompatActivity {
         dec = (Button) findViewById(R.id.decrypt);
         clear = (Button) findViewById(R.id.clear_button);
         send = (Button) findViewById(R.id.send);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         enc.setOnClickListener(new View.OnClickListener() {
             @Override

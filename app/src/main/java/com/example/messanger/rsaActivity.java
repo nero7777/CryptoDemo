@@ -24,6 +24,7 @@ import java.security.spec.X509EncodedKeySpec;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.Locale;
+import java.util.Objects;
 import java.util.logging.Logger;
 
 import javax.crypto.Cipher;
@@ -49,7 +50,7 @@ public class rsaActivity extends AppCompatActivity {
         dec = (Button) findViewById(R.id.decrypt);
         clear = (Button) findViewById(R.id.clear_button);
         send = (Button) findViewById(R.id.send);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
 
         KeyPair kp = getKeyPair();
