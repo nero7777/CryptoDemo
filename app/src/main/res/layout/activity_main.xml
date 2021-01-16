@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-  android:background="#E6D7D7">
+    android:background="#12069c">
+
+
 
 
     <LinearLayout
@@ -29,7 +30,7 @@
             android:gravity="center_horizontal"
             android:textSize="42sp"
             android:fontFamily="serif-monospace"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             />
 
         <TextView
@@ -41,7 +42,7 @@
             android:gravity="center_horizontal"
             android:textSize="21sp"
             android:fontFamily="serif"
-            android:textColor="@color/black"/>
+            android:textColor="@color/white"/>
 
 
         <LinearLayout
@@ -60,7 +61,8 @@
                     android:id="@+id/imageView_AES"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/svidblack" />
+                    app:srcCompat="@drawable/svidblack"
+                    android:onClick="aes"/>
 
                 <TextView
                     android:id="@+id/text_AES"
@@ -68,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:text="AES Algorithm"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
 
@@ -82,7 +84,8 @@
                     android:id="@+id/imageView_RSA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/svidblack" />
+                    app:srcCompat="@drawable/svidblack"
+                    android:onClick="des"/>
 
                 <TextView
                     android:id="@+id/text_RSA"
@@ -90,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:text="RSA Algorithm"
                     android:gravity="center_horizontal"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
         </LinearLayout>
@@ -103,7 +106,7 @@
             android:gravity="center_horizontal"
             android:textSize="21sp"
             android:fontFamily="serif"
-            android:textColor="@color/black"/>
+            android:textColor="@color/white"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,7 +118,8 @@
                 android:id="@+id/imageView_DES"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/svidblack" />
+                app:srcCompat="@drawable/svidblack"
+                android:onClick="rsa"/>
 
             <TextView
                 android:id="@+id/text_DES"
@@ -123,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:text="DES Algorithm"
                 android:gravity="center_horizontal"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_marginTop="8dp"/>
 
         </LinearLayout>
