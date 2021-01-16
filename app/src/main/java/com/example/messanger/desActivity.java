@@ -21,6 +21,7 @@ import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.Objects;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
@@ -66,7 +67,7 @@ public class desActivity extends AppCompatActivity {
         clear = (Button) findViewById(R.id.clear_button);
         //reset = (Button) findViewById(R.id.reset);
         send = (Button) findViewById(R.id.send);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         //initialising key generation part
         myEncryptionKey=myEncKey;
         getMyEncryptionScheme=DES_ENCRYPTION_SCHEME;
