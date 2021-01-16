@@ -49,7 +49,7 @@ public class aesActivity extends AppCompatActivity {
                     inptext = input_text.getText().toString();
                     //  pwdtext = password_text.getText().toString();
                     outputstring = encrypt(inptext, pwdtext);
-                    //output_text.setText(outputstring);
+                    output_text.setText(outputstring);
                     //make a toast her e to say encypted successfully
                     //  Toast.makeText(MainActivity.this,"Encrypted Successfully!!!",Toast.LENGTH_SHORT).show();
                 } catch (Exception e) {
