@@ -81,17 +81,17 @@
                 android:layout_weight="1">
 
                 <ImageView
-                    android:id="@+id/imageView_RSA"
+                    android:id="@+id/imageView_DES"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/svidblack"
                     android:onClick="des"/>
 
                 <TextView
-                    android:id="@+id/text_RSA"
+                    android:id="@+id/text_DES"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RSA Algorithm"
+                    android:text="DES Algorithm"
                     android:gravity="center_horizontal"
                     android:textColor="@color/white"
                     android:layout_marginTop="8dp"/>
@@ -115,17 +115,17 @@
 
 
             <ImageView
-                android:id="@+id/imageView_DES"
+                android:id="@+id/imageView_RSA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/svidblack"
                 android:onClick="rsa"/>
 
             <TextView
-                android:id="@+id/text_DES"
+                android:id="@+id/text_RSA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="DES Algorithm"
+                android:text="RSA Algorithm"
                 android:gravity="center_horizontal"
                 android:textColor="@color/white"
                 android:layout_marginTop="8dp"/>
